@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StockName" representedClassName="StockName" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockSymbole" inverseName="newRelationship" inverseEntity="StockSymbole" syncable="YES"/>
+    </entity>
+    <entity name="StockSymbole" representedClassName="StockSymbole" syncable="YES" codeGenerationType="class">
+        <attribute name="symboleName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockName" inverseName="newRelationship" inverseEntity="StockName" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="StockSymbole" positionX="225" positionY="9" width="128" height="73"/>
+        <element name="StockName" positionX="-54" positionY="0" width="128" height="73"/>
+    </elements>
+</model>
